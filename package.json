@@ -1,0 +1,37 @@
+{
+  "name": "midori-swaggerui",
+  "version": "1.0.0",
+  "description": "Swagger UI package for Midori framework",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "clean": "tsc -b --clean",
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/modscleo4/midori-swaggerui.git"
+  },
+  "keywords": [
+    "midori",
+    "swagger-ui",
+    "swagger",
+    "api",
+    "openapi",
+    "documentation"
+  ],
+  "author": {
+    "name": "Dhiego Cassiano Fogaça Barbosa",
+    "email": "modscleo4@outlook.com"
+  },
+  "license": "Apache-2.0",
+  "dependencies": {
+    "midori": "github:modscleo4/midori"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.4",
+    "typescript": "^5.3.3"
+  }
+}
