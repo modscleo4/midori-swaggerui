@@ -14,10 +14,4 @@
  * limitations under the License.
  */
 
-declare global {
-    interface ImportMeta {
-        url: string;
-    }
-}
-
 export { default as addSwaggerRoutes } from "./swagger.router.js";

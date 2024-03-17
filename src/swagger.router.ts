@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-import { Response } from "midori/http";
-import { Router } from "midori/router";
 import { dirname, normalize } from "node:path";
 import { fileURLToPath } from "node:url";
+import { Response } from "midori/http";
+import { Router } from "midori/router";
 
 export default function addSwaggerRoutes(Router: Router): void {
     Router.get('/docs', async (req, app) => Response.file(fileURLToPath(normalize(dirname(import.meta.url) + '/../index.html'))));
