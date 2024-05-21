@@ -21,5 +21,5 @@ import { Router } from "midori/router";
 
 export default function addSwaggerRoutes(Router: Router): void {
     Router.get('/docs', async (req, app) => Response.file(fileURLToPath(normalize(dirname(import.meta.url) + '/../index.html'))));
-    Router.get('/openapi.yml', async (req, app) => Response.file('./openapi.yml'));
+    Router.get('/openapi.yml', async (req, app) => Response.file('./openapi.yml', req));
 }

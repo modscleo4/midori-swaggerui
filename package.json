@@ -36,7 +36,7 @@
     "midori": "github:modscleo4/midori"
   },
   "devDependencies": {
-    "@types/node": "^20.12.7",
+    "@types/node": "^20.12.12",
     "typescript": "^5.4.5"
   }
 }
